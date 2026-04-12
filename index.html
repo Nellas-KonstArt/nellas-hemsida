@@ -130,6 +130,17 @@ padding: 60px 60px;
 background: #e6efed;
 position: relative;
 }
+.process-rubrik {
+font-family: 'Cinzel', serif;
+font-size: 28px;
+margin-bottom: 5px;
+letter-spacing: 1px;
+}
+.process-underrubrik {
+font-size: 14px;
+color: #7a8f8c;
+margin-top: 0;
+}
 .aktuellt {
 
 padding: 60px 60px;
@@ -141,6 +152,35 @@ to bottom,
 );
 border: 10px solid #c46a4a;
 border-radius: 25px;
+}
+@media (max-width: 768px) {
+
+.container {
+flex-direction: column;
+}
+
+.menu {
+position: static;
+margin-top: 20px;
+}
+
+.hero-bubble {
+width: 100%;
+height: auto;
+}
+
+.bubbles {
+position: static;
+}
+
+h1 {
+font-size: 42px;
+}
+
+.aktuellt {
+padding: 30px 20px;
+}
+
 }
 
 </style>
@@ -176,7 +216,8 @@ border-radius: 25px;
 </div>
 </div>
 <section class="aktuellt">
-  <h2>Aktuellt</h2>
+  <h2 class="process-rubrik">Följ processer</h2>
+<p class="process-underrubrik">Klicka för att se det senaste</p>
 
   <div class="social-grid">
 
